@@ -60,5 +60,13 @@
   "marquee-title" : "Meet The",
   "marquee-title2" : "Team",
   "team-marquee-subtitle" : "The creative minds behind METAMOGRAPHIC — crafting motion, design, and cinematic experiences together."
+},
+"faq" : {
+  "t1" : "Frequently Ask",
+  "t2" : "Questions",
+  "subt" : "Everything you need to know before starting a project with Metamographic.",
+  "t3" : "Still Have Questions?",
+  "t4" : "Our team is ready to help via WhatsApp or email.",
+  "t5" : "Contact Us"
 }
 }

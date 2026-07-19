@@ -334,19 +334,19 @@ function Works() {
       </div>
 
       <div
-        className={`filter-tabs fade-up ${visible ? "visible" : ""}`}
-        style={{ transitionDelay: "0.15s" }}
-      >
-        {([t('all'), t('longshoot'), t('shortshoot')] as const).map((f) => (
-          <button
-            key={f}
-            className={`filter-tab${filter === f ? " active" : ""}`}
-            onClick={() => setFilter(f)}
-          >
-            {f}
-          </button>
-        ))}
-      </div>
+  className={`filter-tabs fade-up ${visible ? "visible" : ""}`}
+  style={{ transitionDelay: "0.15s" }}
+>
+  {filterValues.map((f) => (
+    <button
+      key={f}
+      className={`filter-tab${filter === f ? " active" : ""}`}
+      onClick={() => setFilter(f)}
+    >
+      {filterLabels[f]}
+    </button>
+  ))}
+</div>
 
       <div className="video-grid">
         {filtered.map((v, i) => (
@@ -586,7 +586,7 @@ function Contact() {
           >
             {t('section-title')}
             <br />
-            <span className="gradient-text">{t("something-epic")}.</span>
+            <span className="gradient-text">{t("something-epic")}</span>
           </h2>
 
           <div className="contact-info-item">

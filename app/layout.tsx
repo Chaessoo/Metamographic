@@ -21,12 +21,5 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en" suppressHydrationWarning>
-      <body suppressHydrationWarning>
-        <ClientCursor />
-        {children}
-      </body>
-    </html>
-  );
+  return children;
 }

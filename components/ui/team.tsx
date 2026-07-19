@@ -6,6 +6,8 @@ import Image from "next/image";
 import { createPortal } from "react-dom";
 import { ArrowRight, UserCheck } from "lucide-react";
 import ProfileCard, { type ProfileMember } from "./ProfileCard";
+import { useTranslations, useLocale } from 'next-intl';
+
 
 const teamMembers: ProfileMember[] = [
   {
@@ -187,6 +189,7 @@ const TEAM_DRAG_SENSITIVITY = 0.13;
 const TEAM_VELOCITY_SENSITIVITY = 0.075;
 
 export default function TeamSection() {
+  const t = useTranslations('team');
   const [selectedMember, setSelectedMember] = useState<ProfileMember | null>(null);
   const ringRef = useRef<HTMLDivElement>(null);
   const interactionRef = useRef({
@@ -326,7 +329,7 @@ export default function TeamSection() {
           </div>
 
           <h2 className="team-marquee-title">
-            Meet The <span className="gradient-text">Team</span>
+            {t("marquee-title")} <span className="gradient-text">{t("marquee-title2")}</span>
             <svg
               aria-hidden="true"
               className="team-marquee-title-deco"
@@ -346,8 +349,7 @@ export default function TeamSection() {
             </svg>
           </h2>
           <p className="team-marquee-subtitle">
-            The creative minds behind METAMOGRAPHIC - crafting motion, design,
-            and cinematic experiences together.
+            {t('team-marquee-subtitle')}
           </p>
         </div>
 

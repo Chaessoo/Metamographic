@@ -2,6 +2,8 @@
 
 import { useState, useRef, useEffect } from "react";
 import { Plus } from "lucide-react";
+import { useTranslations, useLocale } from 'next-intl';
+
 
 // FAQ data for a premium motion graphics studio
 const FAQ_ITEMS = [
@@ -56,6 +58,7 @@ function useInView(threshold = 0.15) {
 }
 
 export default function Faq() {
+  const t = useTranslations('faq');
   const [openId, setOpenId] = useState<number | null>(null);
   const [sectionRef, sectionVisible] = useInView();
 
@@ -78,11 +81,11 @@ export default function Faq() {
         <div className="faq-header">
           <div className="section-label">FAQ</div>
           <h2 className="section-title">
-            Frequently Ask{" "}
-            <span className="font-latin gradient-text">Questions</span>
+            {t('t1')}{" "}
+            <span className="font-latin gradient-text">{t("t2")}</span>
           </h2>
           <p className="faq-subtitle">
-            Everything you need to know before starting a project with Metamographic.
+            {t("subt")}
           </p>
         </div>
 
@@ -124,9 +127,9 @@ export default function Faq() {
         {/* CTA block linked to contact */}
         <div className="faq-cta" style={{ transitionDelay: "0.25s" }}>
           <div className="faq-cta-glow" />
-          <h3 className="faq-cta-title">Still have questions?</h3>
+          <h3 className="faq-cta-title">{t('t3')} </h3>
           <p className="faq-cta-text">
-            Our team is ready to help via WhatsApp or email.
+            {t('t4')}
           </p>
           <button
             className="btn-primary"
@@ -134,7 +137,7 @@ export default function Faq() {
               document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
             }
           >
-            Contact Us
+            {t('t5')}
           </button>
         </div>
       </div>

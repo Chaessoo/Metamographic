@@ -46,7 +46,7 @@
   "contact" : {
     "label" : "Hubungi Kami",
     "section-title" : "Mari Membangun",
-    "something-epic" : "Sesuatu Yang Epic.",
+    "something-epic" : "Sesuatu Yang Epic",
     "loc" : "Jawa Barat, Indonesia",
     "message-sent" : "Pesan Terkirim!",
     "notif" : "Kami akan menghubungi Anda kembali dalam waktu 24 jam.",
@@ -64,5 +64,13 @@
   "profile" : {
     "education" : "Pendidikan",
     "language" : "Bahasa"
-  }
+  },
+  "faq" : {
+  "t1" : "Pertanyaan Yang Sering",
+  "t2" : "Diajukan",
+  "subt" : "Semua yang perlu Anda ketahui sebelum memulai proyek dengan Metamographic.",
+  "t3" : "Masih Ada Pertanyaan?",
+  "t4" : "Tim kami siap membantu melalui WhatsApp atau email.",
+  "t5" : "Hubungi Kami"
+} 
 }
