@@ -199,9 +199,9 @@ function Hero({ onContact }: { onContact: () => void }) {
                 }}
               />
             </button>
-            <button className="btn-ghost" onClick={onContact}>
+            {/* <button className="btn-ghost" onClick={onContact}>
               {t('btnStart')} 
-            </button>
+            </button> */}
           </div>
         </div>
 
@@ -214,7 +214,7 @@ function Hero({ onContact }: { onContact: () => void }) {
           }}
           className="hero-logo-3d-wrapper"
         >
-          <MetamographicLogo3D />
+          {/* <MetamographicLogo3D /> */}
         </div>
       </div>
 
@@ -331,6 +331,12 @@ function Works() {
         <h2 className="section-title">
           {t('heading1')} <span className="gradient-text">{t('heading2')}</span>
         </h2>
+      </div>
+
+      <div  className="section-text">
+        <p>
+          We craft high-quality visual content that helps brands communicate clearly, engage audiences, and drive results.
+        </p>
       </div>
 
       <div
