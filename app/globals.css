@@ -380,7 +380,7 @@ section {
   font-size: clamp(40px, 6vw, 72px);
   line-height: 1.0;
   letter-spacing: -0.04em;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.6rem;
   color: #ffffff;
 }
 .gradient-text {
@@ -1675,7 +1675,7 @@ select.form-input option {
   font-family: var(--font-serif);
 }
 .font-latin {
-  font-family: 'Pinyon Script', cursive;
+  font-family: var(--font-body);
 }
 
 /* ─── Responsive ─── */

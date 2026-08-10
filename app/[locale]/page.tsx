@@ -11,6 +11,8 @@ import {
   Film,
   Layers,
   Scissors,
+  Palette,
+  Code,
   Mail,
   MapPin,
   Phone,
@@ -21,6 +23,7 @@ import {
   Sparkles,
   ExternalLink,
 } from "lucide-react";
+import Image from "next/image";
 
 /*
   ──────────────────────────────────────────
@@ -145,7 +148,42 @@ function Navbar({
 function Hero({ onContact }: { onContact: () => void }) {
   const t = useTranslations('hero');
   return (
-    <div className="hero-section" id="hero">
+    <div className="hero-section" id="hero" style={{position:"relative"}}>
+       <Image
+    src="/21.webp"
+    alt=""
+    width={450}
+    height={450}
+    style={{
+      position: "absolute",
+      top: "-180px",
+      left: "-190px",
+      zIndex: 0,
+      pointerEvents: "none",
+      userSelect: "none",
+      opacity: "0.7",
+      filter:"blur(10px)"
+    }}
+    priority
+  />
+
+   <Image
+    src="/80.webp"
+    alt=""
+    width={300}
+    height={300}
+    style={{
+      position: "absolute",
+      top: "0.2%",
+      right: "-120px",
+      zIndex: 0,
+      pointerEvents: "none",
+      userSelect: "none",
+      opacity: "0.8",
+      filter:"blur(5px)"
+    }}
+  />
+
       <div className="orb orb1" />
       <div className="orb orb2" />
       <div className="orb orb3" />
@@ -326,6 +364,22 @@ function Works() {
       ref={ref as React.RefObject<HTMLElement>}
       style={{ paddingTop: "7rem" }}
     >
+      <Image
+    src="/21.webp"
+    alt=""
+    width={500}
+    height={500}
+    style={{
+      position: "absolute",
+      bottom: "-210px",
+      left: "83%",
+      zIndex: 0,
+      pointerEvents: "none",
+      userSelect: "none",
+      opacity: "0.7",
+      filter: "blur(4px)"
+    }}
+  />
       <div className={`fade-up ${visible ? "visible" : ""}`}>
         <div className="section-label">Portfolio</div>
         <h2 className="section-title">
@@ -335,7 +389,7 @@ function Works() {
 
       <div  className="section-text">
         <p>
-          We craft high-quality visual content that helps brands communicate clearly, engage audiences, and drive results.
+          {t('section-text')}
         </p>
       </div>
 
@@ -460,6 +514,24 @@ function Services() {
       name: "Advanced Video Editing",
       body: t('bdy3'),
     },
+    {
+      num: "04",
+      icon: <Palette size={22} />,
+      name: "UI/UX Designer",
+      body: t('bdy3'),
+    },
+    {
+      num: "05",
+      icon: <Code size={22} />,
+      name: "Backend Developer",
+      body: t('bdy3'),
+    },
+    {
+      num: "06",
+      icon: <Code size={22} />,
+      name: "Frontend Developer",
+      body: t('bdy3'),
+    },
   ];
 
   return (
@@ -475,25 +547,27 @@ function Services() {
         <h3
           style={{
             fontFamily: "var(--font-heading)",
-            fontSize: "clamp(24px,4vw,42px)",
+            fontSize: "clamp(24px,4vw,35px)",
             fontWeight: 800,
             marginBottom: "1rem",
-            color: "#F8FAFC",
+            color: "#ffffff",
             letterSpacing: "-0.03em",
+            margin:"0 auto 0.5rem auto"
           }}
         >
-          Motion <span className="font-latin" style={{ fontWeight: 400, textTransform: 'none', marginLeft: '0.1em', fontSize: '1.2em' }}>Graphics</span>
+          Motion Graphics <span className="font-latin" style={{ fontWeight: 400, textTransform: 'none', marginLeft: '0.1em', fontSize: '1.2em' }}></span>
           <br />
-          <span style={{ color: "rgba(248, 250, 252, 0.5)", fontWeight: 400 }}>
-            &amp; <span className="font-latin" style={{ color: "#F8FAFC", textTransform: 'none', fontWeight: 400, fontSize: '1.2em' }}>Creative</span> Editing
+          <span>
+            &amp; <span>Creative</span> Editing
           </span>
         </h3>
         <p
           style={{
-            color: "rgba(248, 250, 252, 0.5)",
+            color: "rgb(248, 250, 252)",
             maxWidth: 600,
             margin: "0 auto",
             lineHeight: 1.7,
+            fontFamily: "var(--font-heading)",
           }}
         >
           {t('text')}
