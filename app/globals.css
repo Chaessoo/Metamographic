@@ -53,6 +53,31 @@ body {
 
 /* ─── Keyframe Animations ─── */
 
+@keyframes moveBubble1 {
+  0%   { transform: translate(0, 0); }
+  50%  { transform: translate(70vw, 60vh); }
+  100% { transform: translate(0, 0); }
+}
+
+@keyframes moveBubble2 {
+  0%   { transform: translate(0, 0) rotate(0deg); }
+  50%  { transform: translate(-70vw, 60vh) rotate(180deg); }
+  100% { transform: translate(0, 0) rotate(360deg); }
+}
+
+@keyframes moveBubble3 {
+  0%   { transform: translate(0, 0); }
+  50%  { transform: translate(40vw, -50vh); }
+  100% { transform: translate(0, 0); }
+}
+
+@keyframes moveBubble4 {
+  0%   { transform: translate(0, 0) rotate(0deg); }
+  50%  { transform: translate(-50vw, -30vh) rotate(180deg); }
+  100% { transform: translate(0, 0) rotate(360deg); }
+}
+
+
 @keyframes orb1 {
   0%, 100% { transform: translate(0, 0) scale(1); }
   50%       { transform: translate(60px, -40px) scale(1.15); }
@@ -152,7 +177,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: rgba(2, 62, 138, 0.18);
+  background: rgba(2, 61, 138, 0.7);
   border-bottom: 1px solid rgba(255, 255, 255, 0);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -165,7 +190,7 @@ body {
     box-shadow 0.25s ease;
 }
 .navbar.scrolled {
-  background: rgba(3, 4, 8, 0.76);
+  background: rgb(24, 69, 247);
   border-bottom-color: rgba(255, 255, 255, 0.06);
   box-shadow: 0 12px 36px rgba(0, 0, 0, 0.24);
 }
@@ -206,6 +231,11 @@ body {
 }
 
 /* ─── Hero ─── */
+
+.bubble1 { animation: moveBubble1 20s linear infinite; animation-delay: 0s ;}
+.bubble2 { animation: moveBubble2 20s linear infinite; animation-delay: -5s ;}
+.bubble3 { animation: moveBubble3 20s linear infinite; animation-delay: -10s ;}
+.bubble4 { animation: moveBubble4 20s linear infinite; animation-delay: -15s ;}
 
 .hero-section {
   background: transparent;

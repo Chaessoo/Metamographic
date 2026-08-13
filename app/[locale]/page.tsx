@@ -149,7 +149,8 @@ function Hero({ onContact }: { onContact: () => void }) {
   const t = useTranslations('hero');
   return (
     <div className="hero-section" id="hero" style={{position:"relative"}}>
-       <Image
+
+       <Image className="bubble1"
     src="/21.webp"
     alt=""
     width={450}
@@ -167,7 +168,7 @@ function Hero({ onContact }: { onContact: () => void }) {
     priority
   />
 
-   <Image
+   <Image className="bubble2"
     src="/80.webp"
     alt=""
     width={300}
@@ -181,6 +182,23 @@ function Hero({ onContact }: { onContact: () => void }) {
       userSelect: "none",
       opacity: "0.8",
       filter:"blur(5px)"
+    }}
+  />
+  
+ 
+  <Image className="bubble3"
+    src="/22 2.webp"
+    alt=""
+    width={500}
+    height={500}
+    style={{
+      position: "absolute",
+      top: "30.2%",
+      right: "850px",
+      zIndex: 0,
+      pointerEvents: "none",
+      userSelect: "none",
+      filter:"blur(2px)",
     }}
   />
 
@@ -364,7 +382,7 @@ function Works() {
       ref={ref as React.RefObject<HTMLElement>}
       style={{ paddingTop: "7rem" }}
     >
-      <Image
+      <Image className="bubble4"
     src="/21.webp"
     alt=""
     width={500}
@@ -518,19 +536,19 @@ function Services() {
       num: "04",
       icon: <Palette size={22} />,
       name: "UI/UX Designer",
-      body: t('bdy3'),
+      body: t('bdy4'),
     },
     {
       num: "05",
       icon: <Code size={22} />,
       name: "Backend Developer",
-      body: t('bdy3'),
+      body: t('bdy5'),
     },
     {
       num: "06",
       icon: <Code size={22} />,
       name: "Frontend Developer",
-      body: t('bdy3'),
+      body: t('bdy6'),
     },
   ];
 
