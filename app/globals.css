@@ -27,6 +27,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -55,25 +56,19 @@ body {
 
 @keyframes moveBubble1 {
   0%   { transform: translate(0, 0); }
-  50%  { transform: translate(70vw, 60vh); }
+  50%  { transform: translate(85vw, 50vh); }
   100% { transform: translate(0, 0); }
 }
 
 @keyframes moveBubble2 {
   0%   { transform: translate(0, 0) rotate(0deg); }
-  50%  { transform: translate(-70vw, 60vh) rotate(180deg); }
+  50%  { transform: translate(-50vw,60vh) rotate(180deg); }
   100% { transform: translate(0, 0) rotate(360deg); }
-}
-
-@keyframes moveBubble3 {
-  0%   { transform: translate(0, 0); }
-  50%  { transform: translate(40vw, -50vh); }
-  100% { transform: translate(0, 0); }
 }
 
 @keyframes moveBubble4 {
   0%   { transform: translate(0, 0) rotate(0deg); }
-  50%  { transform: translate(-50vw, -30vh) rotate(180deg); }
+  50%  { transform: translate(-90vw,60vh) rotate(180deg); }
   100% { transform: translate(0, 0) rotate(360deg); }
 }
 
@@ -190,7 +185,7 @@ body {
     box-shadow 0.25s ease;
 }
 .navbar.scrolled {
-  background: rgb(24, 69, 247);
+  background: rgba(2, 61, 138, 0.7);
   border-bottom-color: rgba(255, 255, 255, 0.06);
   box-shadow: 0 12px 36px rgba(0, 0, 0, 0.24);
 }
@@ -234,7 +229,6 @@ body {
 
 .bubble1 { animation: moveBubble1 20s linear infinite; animation-delay: 0s ;}
 .bubble2 { animation: moveBubble2 20s linear infinite; animation-delay: -5s ;}
-.bubble3 { animation: moveBubble3 20s linear infinite; animation-delay: -10s ;}
 .bubble4 { animation: moveBubble4 20s linear infinite; animation-delay: -15s ;}
 
 .hero-section {
@@ -1021,8 +1015,7 @@ select.form-input option {
   width: 100%;
   overflow: hidden;
   background: 
-    radial-gradient(circle at 50% 44%, rgba(255, 255, 255, 0.12), transparent 38%),
-    linear-gradient(180deg, #030408 0%, #010205 48%, #030408 100%);
+    radial-gradient(circle at 50% 44%, rgba(255, 255, 255, 0.12), transparent 38%);
   padding: 8rem 0 7rem;
 }
 .team-deco-svg {
@@ -1102,7 +1095,7 @@ select.form-input option {
   z-index: 4;
   height: 100%;
   width: min(18vw, 220px);
-  background: linear-gradient(to right, #030408 0%, rgba(3, 4, 8, 0.84) 34%, transparent 100%);
+  /* background: linear-gradient(to right, #030408 0%, rgba(3, 4, 8, 0.84) 34%, transparent 100%); */
 }
 .team-marquee-fade-right {
   pointer-events: none;
@@ -1112,7 +1105,7 @@ select.form-input option {
   z-index: 4;
   height: 100%;
   width: min(18vw, 220px);
-  background: linear-gradient(to left, #030408 0%, rgba(3, 4, 8, 0.84) 34%, transparent 100%);
+  /* background: linear-gradient(to left, #030408 0%, rgba(3, 4, 8, 0.84) 34%, transparent 100%); */
 }
 .team-carousel-stage {
   position: relative;
@@ -1882,6 +1875,8 @@ select.form-input option {
 }
 
 .faq-subtitle {
+  display : flex;
+  align-items: center;
   color: rgba(248, 250, 252, 0.55);
   font-size: 1rem;
   line-height: 1.6;
@@ -1899,13 +1894,13 @@ select.form-input option {
 
 .faq-item {
   background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(139, 92, 246, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.055);
   border-radius: 20px;
   transition: all 0.3s ease;
 }
 
 .faq-item:hover {
-  border-color: rgba(139, 92, 246, 0.5);
+  border-color: rgba(0, 0, 0, 0);
   background: rgba(255, 255, 255, 0.03);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
@@ -1917,8 +1912,9 @@ select.form-input option {
   justify-content: space-between;
   align-items: center;
   padding: 1.25rem 1.5rem;
-  background: transparent;
+  background: #4657D8;
   border: none;
+  border-radius: 15px;
   cursor: pointer;
   font-family: var(--font-heading);
   font-weight: 600;

@@ -162,7 +162,7 @@ function Hero({ onContact }: { onContact: () => void }) {
       zIndex: 0,
       pointerEvents: "none",
       userSelect: "none",
-      opacity: "0.7",
+      opacity: "0.5",
       filter:"blur(10px)"
     }}
     priority
@@ -180,25 +180,8 @@ function Hero({ onContact }: { onContact: () => void }) {
       zIndex: 0,
       pointerEvents: "none",
       userSelect: "none",
-      opacity: "0.8",
+      opacity: "0.5",
       filter:"blur(5px)"
-    }}
-  />
-  
- 
-  <Image className="bubble3"
-    src="/22 2.webp"
-    alt=""
-    width={500}
-    height={500}
-    style={{
-      position: "absolute",
-      top: "30.2%",
-      right: "850px",
-      zIndex: 0,
-      pointerEvents: "none",
-      userSelect: "none",
-      filter:"blur(2px)",
     }}
   />
 
@@ -212,7 +195,7 @@ function Hero({ onContact }: { onContact: () => void }) {
           zIndex: 1,
           maxWidth: 1300,
           margin: "0 auto",
-          width: "100%",
+          width: "100%",   
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
@@ -255,9 +238,7 @@ function Hero({ onContact }: { onContact: () => void }) {
                 }}
               />
             </button>
-            {/* <button className="btn-ghost" onClick={onContact}>
-              {t('btnStart')} 
-            </button> */}
+            
           </div>
         </div>
 
@@ -385,19 +366,80 @@ function Works() {
       <Image className="bubble4"
     src="/21.webp"
     alt=""
-    width={500}
-    height={500}
+    width={350}
+    height={350}
     style={{
       position: "absolute",
-      bottom: "-210px",
-      left: "83%",
+      bottom: "-110px",
+      right:"-120px",
       zIndex: 0,
       pointerEvents: "none",
       userSelect: "none",
-      opacity: "0.7",
+      opacity: "0.5",
       filter: "blur(4px)"
     }}
   />
+
+    <Image className="cloud"
+    src="/cloud_2.webp"
+    alt=""
+    width={999}
+    height={350}
+    style={{
+      position:"absolute",
+      bottom:"-140px",
+      left:"5px",
+      zIndex:"0",
+      opacity:"0.85",
+      userSelect:"none"
+    }}
+    />
+    <Image className="cloud"
+    src="/cloud_2.webp"
+    alt=""
+    width={990}
+    height={350}
+    style={{
+      position:"absolute",
+      bottom:"-140px",
+      right:"5px",
+      zIndex:"0",
+      opacity:"0.85",
+      userSelect:"none",
+    }}
+    />
+
+  <Image className="cloud cloud-left"
+  src="/cloud.webp"
+  alt=""
+  width={600}
+  height={420}
+  style={{
+    position: "absolute",
+    bottom: "-140px",
+    left: "-100px",
+    zIndex: 0,
+    opacity: 0.85,
+    userSelect: "none",
+  }}
+/>
+
+<Image
+  className="cloud cloud-right"
+  src="/cloud.webp"
+  alt=""
+  width={600}
+  height={420}
+  style={{
+    position: "absolute",
+    bottom: "-140px",
+    right: "-100px",
+    zIndex: 0,
+    opacity: 0.85,
+    userSelect: "none",
+  }}
+/>
+
       <div className={`fade-up ${visible ? "visible" : ""}`}>
         <div className="section-label">Portfolio</div>
         <h2 className="section-title">
