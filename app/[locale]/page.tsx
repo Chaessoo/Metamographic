@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import dynamic from "next/dynamic";
+import { motion, useScroll, useTransform } from 'framer-motion';
 import Faq from "@/components/ui/faq";
 import { Typewriter } from "@/components/ui/typewriter";
 import { useTranslations, useLocale } from 'next-intl';
@@ -390,10 +391,11 @@ function Works() {
       bottom:"-140px",
       left:"5px",
       zIndex:"0",
-      opacity:"0.85",
+      opacity:"0.2",
       userSelect:"none"
     }}
     />
+
     <Image className="cloud"
     src="/cloud_2.webp"
     alt=""
@@ -404,29 +406,44 @@ function Works() {
       bottom:"-140px",
       right:"5px",
       zIndex:"0",
-      opacity:"0.85",
+      opacity:"0.2",
       userSelect:"none",
     }}
     />
+    {/* <Image className="cloud"
+    src="/cloud_2.webp"
+    alt=""
+    width={990}
+    height={350}
+    style={{
+      position:"absolute",
+      bottom:"-160px",
+      right:"5px",
+      zIndex:"0",
+      opacity:"0,5",
+      userSelect:"none",
+    }}
+    /> */}
 
   <Image className="cloud cloud-left"
-  src="/cloud.webp"
+  src="/cloud_2.webp"
   alt=""
-  width={600}
-  height={420}
+  width={700}
+  height={450}
   style={{
     position: "absolute",
     bottom: "-140px",
     left: "-100px",
-    zIndex: 0,
-    opacity: 0.85,
+    zIndex: "0",
+    opacity: "0.2",
     userSelect: "none",
-  }}
+    transform:"scaleX(-1)",
+   }}
 />
 
 <Image
   className="cloud cloud-right"
-  src="/cloud.webp"
+  src="/cloud_2.webp"
   alt=""
   width={600}
   height={420}
@@ -434,8 +451,8 @@ function Works() {
     position: "absolute",
     bottom: "-140px",
     right: "-100px",
-    zIndex: 0,
-    opacity: 0.85,
+    zIndex: "0",
+    opacity: "0.2",
     userSelect: "none",
   }}
 />
@@ -593,14 +610,48 @@ function Services() {
       body: t('bdy6'),
     },
   ];
-
+  
   return (
     <section id="service" ref={ref as React.RefObject<HTMLElement>}>
       <div
         className={`fade-up ${visible ? "visible" : ""}`}
         style={{ marginBottom: "3rem", textAlign: "center" }}
       >
-        <div className="section-label">{t('label')}</div>
+        <div className="section-label">{t('label')}
+        
+    <Image className="bubble4"
+    src="/21.webp"
+    alt=""
+    width={350}
+    height={350}
+    style={{
+      position: "absolute",
+      bottom: "-110px",
+      right:"-120px",
+      zIndex: 0,
+      pointerEvents: "none",
+      userSelect: "none",
+      opacity: "0.5",
+      filter: "blur(4px)"
+    }}
+  />
+  <Image className="bubble5"
+    src="/75.webp"
+    alt=""
+    width={350}
+    height={350}
+    style={{
+      position: "absolute",
+      bottom: "-110px",
+      left:"25%",
+      zIndex: 0,
+      pointerEvents: "none",
+      userSelect: "none",
+      opacity: "0.5",
+      filter: "blur(4px)"
+    }}
+  />
+        </div>
         <h2 className="section-title">
           {t('title')} <span className="gradient-text">{t('title2')}</span>
         </h2>
@@ -633,7 +684,6 @@ function Services() {
           {t('text')}
         </p>
       </div>
-
       <div className="service-cards">
         {cards.map((c, i) => (
           <div
