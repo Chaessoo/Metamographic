@@ -410,20 +410,6 @@ function Works() {
       userSelect:"none",
     }}
     />
-    {/* <Image className="cloud"
-    src="/cloud_2.webp"
-    alt=""
-    width={990}
-    height={350}
-    style={{
-      position:"absolute",
-      bottom:"-160px",
-      right:"5px",
-      zIndex:"0",
-      opacity:"0,5",
-      userSelect:"none",
-    }}
-    /> */}
 
   <Image className="cloud cloud-left"
   src="/cloud_2.webp"
@@ -918,6 +904,8 @@ function Contact() {
                     <option>Motion Design</option>
                     <option>VFX & Compositing</option>
                     <option>Video Editing</option>
+                    <option>UI UX Design</option>
+                    <option>Web Development</option>
                   </select>
                 </div>
 

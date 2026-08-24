@@ -71,6 +71,22 @@
   "subt" : "Everything you need to know before starting a project with Metamographic.",
   "t3" : "Still Have Questions?",
   "t4" : "Our team is ready to help via WhatsApp or email.",
-  "t5" : "Contact Us"
+  "t5" : "Contact Us",
+   "q1": {
+      "question": "How long does a typical project take?",
+      "answer": "Production timelines vary depending on the complexity of the project. A short motion graphics piece around 15 to 30 seconds usually takes 7 to 14 working days, while projects with heavier VFX or 3D animation can take 3 to 6 weeks. We always provide a clear production timeline at the beginning of the collaboration."
+    },
+   "q2": {
+      "question": "Can I request revisions?",
+      "answer": "Absolutely. Every project includes 2 to 3 revision rounds based on the agreement made at the start. We prioritize client satisfaction, so the revision process stays collaborative until the final result matches your expectations."
+    },
+   "q3": {
+      "question": "What makes Metamographic different from other studios?",
+      "answer": "We combine a cinematic approach with technical precision. Every frame is designed with intention, not just animated for movement. Supported by an experienced creative team and studio-grade hardware, we produce visuals with a refined cinematic quality that is difficult to match."
+    },
+   "q4": {
+      "question": "How do I start a project with Metamographic?",
+      "answer": "Simply click the 'Start Project' button or reach out through the contact form. We will schedule a free discovery session to understand your needs, then send a proposal with pricing and timeline details. Once everything is approved, our team gets to work right away."
+    }
 }
 }

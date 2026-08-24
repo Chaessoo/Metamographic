@@ -2,36 +2,9 @@
 
 import { useState, useRef, useEffect } from "react";
 import { Plus } from "lucide-react";
-import { useTranslations, useLocale } from 'next-intl';
-
-
+import { useTranslations } from 'next-intl';
 // FAQ data for a premium motion graphics studio
-const FAQ_ITEMS = [
-  {
-    id: 1,
-    question: "How long does a typical project take?",
-    answer:
-      "Production timelines vary depending on the complexity of the project. A short motion graphics piece around 15 to 30 seconds usually takes 7 to 14 working days, while projects with heavier VFX or 3D animation can take 3 to 6 weeks. We always provide a clear production timeline at the beginning of the collaboration.",
-  },
-  {
-    id: 2,
-    question: "Can I request revisions?",
-    answer:
-      "Absolutely. Every project includes 2 to 3 revision rounds based on the agreement made at the start. We prioritize client satisfaction, so the revision process stays collaborative until the final result matches your expectations.",
-  },
-  {
-    id: 3,
-    question: "What makes Metamographic different from other studios?",
-    answer:
-      "We combine a cinematic approach with technical precision. Every frame is designed with intention, not just animated for movement. Supported by an experienced creative team and studio-grade hardware, we produce visuals with a refined cinematic quality that is difficult to match.",
-  },
-  {
-    id: 4,
-    question: "How do I start a project with Metamographic?",
-    answer:
-      "Simply click the 'Start Project' button or reach out through the contact form. We will schedule a free discovery session to understand your needs, then send a proposal with pricing and timeline details. Once everything is approved, our team gets to work right away.",
-  },
-];
+
 
 // useInView hook
 function useInView(threshold = 0.15) {
@@ -65,7 +38,31 @@ export default function Faq() {
   const toggleItem = (id: number) => {
     setOpenId((prev) => (prev === id ? null : id));
   };
-
+  const FAQ_ITEMS = [
+  {
+    id: 1,
+    question: t("q1.question"),
+    answer: t("q1.answer"),
+  },
+  {
+    id: 2,
+    question: t("q2.question"),
+    answer:
+      t("q2.answer"),
+  },
+  {
+    id: 3,
+    question: t("q3.question"),
+    answer:
+      t("q3.answer"),
+  },
+  {
+    id: 4,
+    question: t("q4.question"),
+    answer:
+      t("q4.answer"),
+  },
+];
   return (
     <section
       className={`faq-section fade-up ${sectionVisible ? "visible" : ""}`}

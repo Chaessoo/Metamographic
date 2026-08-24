@@ -75,6 +75,25 @@
   "subt" : "Semua yang perlu Anda ketahui sebelum memulai proyek dengan Metamographic.",
   "t3" : "Masih Ada Pertanyaan?",
   "t4" : "Tim kami siap membantu melalui WhatsApp atau email.",
-  "t5" : "Hubungi Kami"
+  "t5" : "Hubungi Kami",
+  "q1": {
+  "question": "Berapa lama biasanya sebuah proyek dikerjakan?",
+  "answer": "Waktu produksi bervariasi tergantung pada kompleksitas proyek. Motion graphics pendek sekitar 15 hingga 30 detik biasanya membutuhkan waktu 7 hingga 14 hari kerja, sementara proyek dengan VFX atau animasi 3D yang lebih kompleks dapat memakan waktu 3 hingga 6 minggu. Kami selalu memberikan timeline produksi yang jelas di awal kerja sama."
+},
+
+"q2": {
+  "question": "Apakah saya bisa meminta revisi?",
+  "answer": "Tentu saja. Setiap proyek mencakup 2 hingga 3 kali putaran revisi berdasarkan kesepakatan yang dibuat di awal. Kami mengutamakan kepuasan klien, sehingga proses revisi dilakukan secara kolaboratif hingga hasil akhirnya sesuai dengan ekspektasi Anda."
+},
+
+"q3": {
+  "question": "Apa yang membuat Metamographic berbeda dari studio lainnya?",
+  "answer": "Kami menggabungkan pendekatan sinematik dengan ketelitian teknis. Setiap frame dirancang dengan tujuan, bukan sekadar dianimasikan agar terlihat bergerak. Didukung oleh tim kreatif yang berpengalaman dan perangkat keras berstandar studio, kami menghasilkan visual dengan kualitas sinematik yang sulit untuk ditandingi."
+},
+
+"q4": {
+  "question": "Bagaimana cara memulai proyek dengan Metamographic?",
+  "answer": "Cukup klik tombol 'Mulai Proyek' atau hubungi kami melalui formulir kontak. Kami akan menjadwalkan sesi konsultasi gratis untuk memahami kebutuhan Anda, kemudian mengirimkan proposal yang mencakup detail harga dan timeline. Setelah semuanya disetujui, tim kami akan segera mulai mengerjakan proyek Anda."
+}
 } 
 }

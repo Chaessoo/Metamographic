@@ -11,8 +11,8 @@ import { useTranslations, useLocale } from 'next-intl';
 
 const teamMembers: ProfileMember[] = [
   {
-    name: "Arlecchino",
-    role: "Creative Director",
+    name: "Revi Ardiano",
+    role: "Frontend Developer",
     bio: "A creative director with a strong passion for visual storytelling, graphic design, film, and digital media. Arlecchino builds meaningful visuals that connect with people and turn static ideas into cinematic identity systems.",
     photo: "/no.jpeg",
     email: "arlecchino@metamographic.studio",
@@ -48,8 +48,8 @@ const teamMembers: ProfileMember[] = [
     highlights: ["visual storytelling", "graphic design", "film", "digital media"],
   },
   {
-    name: "Usamah Hasanz",
-    role: "Motion Director",
+    name: "Usamah Hasan Zaid",
+    role: "Backend Developer",
     bio: "A motion director specializing in the fluid physics of digital movement. Usamah designs transitions and animation systems that feel natural, precise, and emotionally paced for modern brand films.",
     photo: "/chatte.jpg",
     email: "usamah@metamographic.studio",
@@ -75,7 +75,7 @@ const teamMembers: ProfileMember[] = [
     highlights: ["motion director", "digital movement", "animation systems"],
   },
   {
-    name: "Yusuf Izzat",
+    name: "Yusuf Izzaturrahman",
     role: "VFX Artist",
     bio: "A VFX artist focused on particle systems, compositing, and hyper-real simulations. Yusuf bridges reality and the digital realm through seamless visual effects for cinematic campaigns.",
     photo: "/suf.jpg",
