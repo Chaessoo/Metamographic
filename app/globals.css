@@ -321,10 +321,10 @@ body {
 
 /* ─── Hero ─── */
 
-.bubble1 { animation: moveBubble1 20s linear infinite; animation-delay: 0s ;}
-.bubble2 { animation: moveBubble2 20s linear infinite; animation-delay: -5s ;}
-.bubble4 { animation: moveBubble4 20s linear infinite; animation-delay: -15s ;}
-.bubble5 { animation: moveBubble5 20s linear infinite; animation-delay: -20s ;}
+.bubble1 { animation: moveBubble1 20s linear infinite; animation-delay: 0s ; position: absolute;}
+.bubble2 { animation: moveBubble2 20s linear infinite; animation-delay: -5s ; position: absolute;}
+.bubble4 { animation: moveBubble4 20s linear infinite; animation-delay: -15s ; position: absolute;}
+.bubble5 { animation: moveBubble5 20s linear infinite; animation-delay: -20s ; position: absolute;}
 
 .hero-section {
   background: transparent;
@@ -1519,6 +1519,10 @@ select.form-input option {
   flex-direction: column;
   align-items: flex-start;
   gap: 0.9rem;
+  padding : 0;
+  max-width: none;
+  margin: 0;
+
 }
 .profile-about-text {
   max-width: 58ch;
@@ -1675,6 +1679,7 @@ select.form-input option {
   width: 100%;
   display: grid;
   gap: 0.75rem;
+  grid-template-columns: 1fr;
 }
 .profile-language-row {
   display: grid;

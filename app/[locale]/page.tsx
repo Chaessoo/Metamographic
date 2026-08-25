@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useRef } from "react";
 import dynamic from "next/dynamic";
-import { motion, useScroll, useTransform } from 'framer-motion';
 import Faq from "@/components/ui/faq";
 import { Typewriter } from "@/components/ui/typewriter";
 import { useTranslations, useLocale } from 'next-intl';
@@ -742,10 +741,18 @@ function Contact() {
   const submit = (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    setTimeout(() => {
+    const phoneNumber = "6282182788521";
+    const text = `Halo, saya ${form.name} (${form.email}) tertarik dengan layanan *${form.service || "-"}*.
+
+Pesan:
+${form.message}`;
+
+     const waUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
+     setTimeout(() => {
       setLoading(false);
       setSuccess(true);
-    }, 1800);
+      window.open(waUrl, "_blank");}, 500)
+
   };
 
   return (
