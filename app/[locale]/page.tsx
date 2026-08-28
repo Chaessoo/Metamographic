@@ -788,7 +788,7 @@ ${form.message}`;
             <div className="contact-icon">
               <Phone size={18} />
             </div>
-            <span>+62 812 3456 7890</span>
+            <span>+62 8232 2602 6447</span>
           </div>
 
           <div className="social-row">

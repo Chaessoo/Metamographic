@@ -104,19 +104,19 @@ const teamMembers: ProfileMember[] = [
   },
   {
     name: "Roofid Rizqu",
-    role: "3D Designer",
-    bio: "A 3D designer crafting depth and dimension in every frame. Roofid specializes in high-fidelity modeling, lighting, procedural workflows, and rendering systems that bring concepts to life.",
-    photo: "/pid.jpg",
-    email: "roofid@metamographic.studio",
+    role: "Motion Designer",
+    bio:  "Motion graphic designer specializing in bringing ideas to life through movement and visual storytelling. They craft fluid animations, dynamic compositions, and thoughtful transitions that give modern digital content a distinctive and engaging visual identity.",
+    photo: "/roofid.jpg",
+    email: "roofidrizqu00@gmail.com",
     social: [
-      { label: "Instagram", url: "https://instagram.com/roofid" },
-      { label: "Artstation", url: "https://github.com" },
+      { label: "Instagram", url: "https://instagram.com/_rfdzz" },
+      { label: "Artstation", url: "https://drive.google.com/drive/u/3/folders/1BXNF7bWSxgb31eAWnMSusUe-yxZCB5Kz" },
     ],
-    location: "Yogyakarta, Indonesia",
+    location: "Lampung, Indonesia",
     education: [
       {
         school: "Pondok Information Technology",
-        degree: "Fine Arts",
+        degree: "Multimedia",
         years: "2018 - 2022",
       },
     ],
