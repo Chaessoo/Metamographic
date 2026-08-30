@@ -51,7 +51,7 @@ const teamMembers: ProfileMember[] = [
     name: "Usamah Hasan Zaid",
     role: "Web Developer",
     bio: "A backend developer focused on building reliable systems and scalable architecture. They design APIs, manage databases, and develop the core infrastructure that keeps modern digital products secure, efficient, and dependable.",
-    photo: "/chatte.jpg",
+    photo: "/sam.jpg",
     email: "hasanzusamah@gmail.com",
     social: [
       { label: "Instagram", url: "https://instagram.com/usmhhsnz" },

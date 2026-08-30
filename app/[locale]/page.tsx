@@ -296,45 +296,45 @@ type VideoItem = {
 const INITIAL_VIDEOS: VideoItem[] = [
   { 
     id: 1, 
-    title: "Neon City Intro", 
+    title: "Long Video", 
     category: "Long Shoot", 
-    thumb: "neon_city_intro_thumb_1776738298260.png",
-    url: "https://www.youtube.com/embed/dQw4w9WgXcQ" // Example embed
+    thumb: "/long-shoot.webp",
+    url: "https://drive.google.com/file/d/1M38owktFHE-VqcG0wZ1muV0jLHA0ho3m/view?usp=drive_link" 
   },
   { 
     id: 2, 
-    title: "Brand Identity Reel", 
+    title: "Motion Graphics", 
     category: "Short Shoot", 
-    thumb: "brand_identity_thumb_1776738470444.png",
-    url: "https://www.youtube.com/embed/dQw4w9WgXcQ" 
+    thumb: "/motion graphics.webp",
+    url: "https://drive.google.com/file/d/1UL6tglRCuveUD4v6tXn4YJ_QN04M849G/view?usp=drive_link" 
   },
   { 
     id: 3, 
-    title: "Kinetic Typography Vol.1", 
+    title: "Logo Animation", 
     category: "Long Shoot", 
-    thumb: "kinetic_typography_thumb_1776738789943.png",
-    url: "https://www.youtube.com/embed/dQw4w9WgXcQ" 
+    thumb: "/logo animations.webp",
+    url: "https://drive.google.com/file/d/19IkfGQcmCYzUlkNq3PYr6OW9I4R7m-om/view?usp=drive_link" 
   },
   { 
     id: 4, 
-    title: "Product Launch VFX", 
+    title: "Video Editing", 
     category: "Short Shoot", 
-    thumb: "neon_city_intro_thumb_1776738298260.png", 
-    url: "https://www.youtube.com/embed/dQw4w9WgXcQ" 
+    thumb: "/video editing.webp", 
+    url: "https://drive.google.com/file/d/1uacOwJzz-jNxrgO8pMMJQygaWZ2jRgDz/view?usp=drive_link" 
   },
   { 
     id: 5, 
     title: "3D Logo Animation", 
     category: "Long Shoot", 
-    thumb: "brand_identity_thumb_1776738470444.png", 
-    url: "https://www.youtube.com/embed/dQw4w9WgXcQ" 
+    thumb: "/3d logo animation.webp", 
+    url: "https://drive.google.com/file/d/1nprKaIk1ERXuFsT44tBxQnGkehObvtZ8/view?usp=drive_link" 
   },
   { 
     id: 6, 
-    title: "Cinematic Showreel", 
+    title: "Motion Showreel", 
     category: "Short Shoot", 
-    thumb: "kinetic_typography_thumb_1776738789943.png", 
-    url: "https://www.youtube.com/embed/dQw4w9WgXcQ" 
+    thumb: "/showreel.webp", 
+    url: "https://drive.google.com/file/d/1PWsF28zShP1uc3HmKlaOo9LP9Zom9JFu/view?usp=drive_link" 
   },
 ];
 
@@ -742,9 +742,10 @@ function Contact() {
     e.preventDefault();
     setLoading(true);
     const phoneNumber = "6282182788521";
-    const text = `Halo, saya ${form.name} (${form.email}) tertarik dengan layanan *${form.service || "-"}*.
+    const text = `Hi Metamogaphic Team,
+    My name is ${form.name} (${form.email}) Im interested in working with your team on new project *${form.service || "-"}*, Id love to discuss and explore together.
 
-Pesan:
+Message:
 ${form.message}`;
 
      const waUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;

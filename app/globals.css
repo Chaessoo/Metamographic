@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&family=Syne:wght@700;800&family=Pinyon+Script&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -579,6 +582,7 @@ section {
   justify-content: center;
   position: relative;
   overflow: hidden;
+  z-index: 0;
 }
 .play-icon {
   width: 56px;
