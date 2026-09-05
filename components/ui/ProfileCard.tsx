@@ -22,7 +22,7 @@ export type ProfileMember = {
   }>;
   softSkills: string[];
   technicalSkills: string[];
-  software: string[];
+  software: {name : string; logo : string} [];
   languages: Array<{
     name: string;
     level: number;
@@ -191,13 +191,19 @@ export default function ProfileCard({ member, onClose }: ProfileCardProps) {
               </section>
 
               <section className="profile-section profile-compact-section">
-                <h3>Software</h3>
-                <div className="profile-software-grid">
-                  {member.software.map((software) => (
-                    <span key={software}>{software}</span>
-                  ))}
-                </div>
-              </section>
+             <h3>Software</h3>
+              <div className="profile-software-grid">
+              {member.software.map((item) => (
+              <div key={item.name} className="software-logo-item" title={item.name}>
+          <img
+          src={item.logo}
+          alt={item.name}
+          style={{ width: 28, height: 28, objectFit: "contain" }}
+        />
+      </div>
+    ))}
+  </div>
+</section>
 
               <section className="profile-section profile-compact-section">
                 <h3>Language</h3>

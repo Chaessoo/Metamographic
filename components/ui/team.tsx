@@ -40,7 +40,12 @@ const teamMembers: ProfileMember[] = [
       "Visual communicator",
     ],
     technicalSkills: ["Art Direction", "Brand Systems", "Storyboarding", "Visual Design"],
-    software: ["Ps", "Ai", "Canva", "Fig"],
+    software: [
+      { name : "photoshop" , logo : "/photosop.webp"},
+      { name : "photoroom" , logo : "/photoroom.webp  "},
+      { name : "premire" , logo : "/premiere.webp"},
+      { name : "aftereffect" , logo : "/aftereffect"},
+    ],
     languages: [
       { name: "English", level: 90 },
       { name: "Indonesian", level: 100 },
@@ -67,7 +72,11 @@ const teamMembers: ProfileMember[] = [
     ],
     softSkills: ["Problem solver", "Critical Thinker", "Time management", "Team Work"],
     technicalSkills: ["HTML", "CSS", "PHP", "Laravel", "Database", "MySQL"],
-    software: ["VSC", "Claude", "GPT"],
+    software: [
+      { name : "vscode" , logo : "/vscodeb.webp"},
+      { name : "claude" , logo : "/claude.webp"},
+      { name : "chatgpt" , logo : "/chatgpt.webp"},
+    ],
     languages: [
       { name: "English", level: 85 },
       { name: "Indonesian", level: 100 },
@@ -95,7 +104,12 @@ const teamMembers: ProfileMember[] = [
     ],
     softSkills: ["Analytical thinking", "Patience", "Team collaboration", "Adaptability"],
     technicalSkills: ["Particle Simulation", "Rotoscoping", "Matchmoving", "Color Science"],
-    software: ["Nuke", "Houd", "Maya", "Ae"],
+    software: [
+      { name : "photoshop" , logo : "/photoshop.webp"},
+      { name : "photoroom" , logo : "/photoroom.webp  "},
+      { name : "premire" , logo : "/premiere.webp"},
+      { name : "aftereffect" , logo : "/aftereffect.webp"},
+    ],
     languages: [
       { name: "English", level: 80 },
       { name: "Indonesian", level: 100 },
@@ -122,7 +136,12 @@ const teamMembers: ProfileMember[] = [
     ],
     softSkills: ["Spatial awareness", "Creativity", "Dedication", "Self-motivated"],
     technicalSkills: ["3D Modeling", "Texturing", "Lighting", "Rendering"],
-    software: ["Blend", "ZBr", "SP", "Unrl"],
+    software: [
+      { name : "photoshop" , logo : "/photoshop.webp"},
+      { name : "photoroom" , logo : "/photoroom.webp  "},
+      { name : "premire" , logo : "/premiere.webp"},
+      { name : "aftereffect" , logo : "/aftereffect.webp"},
+    ],
     languages: [
       { name: "English", level: 75 },
       { name: "Indonesian", level: 100 },
@@ -149,7 +168,12 @@ const teamMembers: ProfileMember[] = [
     ],
     softSkills: ["Storytelling", "Rhythm and pacing", "Communication", "Work under pressure"],
     technicalSkills: ["Offline Editing", "Online Editing", "Sound Design", "Color Grading"],
-    software: ["Pr", "Resolve", "FCPX", "Au"],
+    software: [
+      { name : "photoshop" , logo : "/photosop.webp"},
+      { name : "photoroom" , logo : "/photoroom.webp  "},
+      { name : "premire" , logo : "/premiere.webp"},
+      { name : "aftereffect" , logo : "/aftereffect"},
+    ],
     languages: [
       { name: "English", level: 85 },
       { name: "Indonesian", level: 100 },
@@ -176,7 +200,12 @@ const teamMembers: ProfileMember[] = [
     ],
     softSkills: ["Critical observation", "Efficiency", "Team player", "Technical troubleshooting"],
     technicalSkills: ["Compositing", "Color Grading", "Keying", "Tracking"],
-    software: ["Nuke", "Resolve", "Ae", "Mocha"],
+    software: [
+      { name : "photoshop" , logo : "/photosop.webp"},
+      { name : "photoroom" , logo : "/photoroom.webp  "},
+      { name : "premire" , logo : "/premiere.webp"},
+      { name : "aftereffect" , logo : "/aftereffect"},
+    ],
     languages: [
       { name: "English", level: 80 },
       { name: "Indonesian", level: 100 },
